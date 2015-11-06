@@ -23,7 +23,7 @@ Ruby on Rails
 
 #Design:
 
-Goal was to capture peoples attention into using the site by it being visually appealing.The 2nd goal is to fallicitate sending money to other accounts just by their email and your debit card.
+Design goal was to capture peoples attention into using the site by it being visually appealing.The 2nd goal is to fallicitate sending money to other accounts just by their email and your debit card.
 
 Reason
 It is another method to give and recieve money. 
@@ -37,8 +37,6 @@ __________________________________________________________________________
  - Trello Link: https://trello.com/b/lkgadiDY/project-2
  - 
 ##Next Steps:
-
-#Goals 
 
 The goal is to felicitate sending money to other accounts just by their email and your debit card.
 
