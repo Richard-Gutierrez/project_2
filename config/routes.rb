@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
     resources :articles
     resources :users
     root 'users#new'
@@ -60,4 +59,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
 
