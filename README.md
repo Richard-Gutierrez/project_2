@@ -23,8 +23,7 @@ Ruby on Rails
 
 #Design:
 
-Goal
-The goal is to fallicitate sending money to other accounts just by their email and your debit card.
+Goal was to capture peoples attention into using the site by it being visually appealing.The 2nd goal is to fallicitate sending money to other accounts just by their email and your debit card.
 
 Reason
 It is another method to give and recieve money. 
