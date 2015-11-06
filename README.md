@@ -35,7 +35,7 @@ _______________________________________________________________________
 __________________________________________________________________________
 
  - Trello Link: https://trello.com/b/lkgadiDY/project-2
- - 
+  
 ##Next Steps:
 
 The goal is to felicitate sending money to other accounts just by their email and your debit card.
