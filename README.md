@@ -3,7 +3,7 @@
 ### Pay Me Now
 ______________________________________________________________________
  
-#Description:
+##Description:
 
 Who's doing it?
 
@@ -11,7 +11,7 @@ People who go out in groups to dinner and bars.
 
 People who don't have cash at hand and can't pay for their part, this app will help. People that are in need of cash in a hurry; this app it be easy to add money to the 2nd parties account.
 
-#Technical Usage
+##Technical Usage:
 
 Git Hub
 
@@ -37,7 +37,7 @@ __________________________________________________________________________
 
  - Trello Link: https://trello.com/b/lkgadiDY/project-2
  - 
-#Next Steps:
+##Next Steps:
 
 #Goals 
 
