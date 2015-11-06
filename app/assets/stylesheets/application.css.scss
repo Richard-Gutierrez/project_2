@@ -18,22 +18,46 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
 
-div {
+background: url('http://www.jamesransom.com/gallery/large/dinner-overhead.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+}
 
-  width: 500px;
-  height: 40px;
+
+h1 {
+  color: white;
+  font-family: 'Meddon', cursive;
+  font-size: 120px;
+  margin-top: 60px;
+  margin-left: 120px;
 
 }
 
 #boxed {
 
-  background-color: #cccccc;
-  margin-left: 600px;
-  margin-top: 500px;
-
-
+  margin-top: 360px;
+  margin-left: 220px;
 }
+
+
+div {
+
+  width: 450px;
+  height: 37px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

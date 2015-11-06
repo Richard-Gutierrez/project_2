@@ -1,10 +1,35 @@
 <style>
 
 body {
-
 background: url('http://tablet.todayonline.com/sites/default/files/styles/photo_gallery_image_lightbox/public/photos/43_images/23633375.jpg?itok=oqec0eZD');
-background-size: 100%;
-background-repeat: no-repeat;
 }
-
 </style>
+
+
+<h1>Hello, <%= @user.name %></h1>
+
+<%= link_to "Edit your Profile", edit_user_path(@user) %>
+
+
+<div id="boxed">
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Debit Card</span>
+  <input type="text" class="form-control" placeholder="Visa MasterCard" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Billing Address</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Save</a></li>
+  <li role="presentation" class="active"><a href="#">Cancel</a></li>
+</ul>
+
+</div>
+</div>
+
+</body>
+
+

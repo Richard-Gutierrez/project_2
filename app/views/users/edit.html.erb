@@ -1,0 +1,23 @@
+<style>
+
+body {
+background: url('http://tablet.todayonline.com/sites/default/files/styles/photo_gallery_image_lightbox/public/photos/43_images/23633375.jpg?itok=oqec0eZD');
+}
+</style>
+
+
+<h1>Edit your page, <%= @user.name %>!</h1>
+
+<%= form_for @user do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name, class: 'form-control' %>
+
+<%= f.label :email %>
+<%= f.text_field :email, class: 'form-control' %>
+
+<%= f.submit "Update Profile" %>
+
+<%= link_to 'Delete', @user, method: :delete, data: { confirm: "Are you sure?"} %>
+
+<% end %>
