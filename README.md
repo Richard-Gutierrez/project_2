@@ -11,7 +11,7 @@ The goal is to fallicitate sending money to other accounts just by their email a
 ###Reason
 It is another method to give and recieve money. 
 
-
+![homepage](https://i.imgur.com/akRE7hD.jpg)
 _______________________________________________________________________
 
 As a user I would like to send money to my friends by their email.
