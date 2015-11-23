@@ -1,5 +1,8 @@
 
 
+
+<div id="boxed">
+
 <h1>Edit your page, <%= @user.name %>!</h1>
 
 <%= form_for @user do |f| %>
@@ -15,6 +18,10 @@
 <%= link_to 'Delete', @user, method: :delete, data: { confirm: "Are you sure?"} %>
 
 <% end %>
+
+</div>
+
+
 <style>
 
 body {
@@ -22,9 +29,15 @@ background: url('http://tablet.todayonline.com/sites/default/files/styles/photo_
 }
 
 h1 {
-
 color: white;
+font-family: 'UnifrakturMaguntia', cursive;
 
+}
+
+#boxed {
+
+  margin-top: 360px;
+  margin-left: 220px;
 }
 
 </style>
