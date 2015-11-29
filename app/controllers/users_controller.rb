@@ -19,12 +19,11 @@ class UsersController < ApplicationController
     else
       render 'new'
     end
-
-
   end
 
   def show
     @user = User.find(params[:id])
+    @card = Card.new
   end
 
   def edit
@@ -33,6 +32,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
+
 
     if @user.update_attributes(user_params)
       redirect_to user_path(@user.id)
@@ -47,8 +47,7 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
-
-  private
+private
 
 def user_params
   params.require(:user).permit(
@@ -56,7 +55,7 @@ def user_params
     :email,
     :password,
     :password_confirmation)
+  end
 end
 
 
-end

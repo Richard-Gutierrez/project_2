@@ -1,15 +1,37 @@
+
+<style>
+
+h2 {
+
+color: red;
+float: left;
+clear: left;
+margin-left: 600px;
+margin-top: 250px;
+
+}
+ul {
+color: Dodger blue;
+
+}
+
+</style>
+
+
+
 <h1>Sign Up</h1>
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% for message in @user.errors.full_messages %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= form_for @user do |f| %>
+    <% if @user.errors.any? %>
+      <div class="error_messages">
+        <h2>Form is invalid</h2>
+        <ul>
+          <% for message in @user.errors.full_messages %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+
+<% end %>
 
 <div id="boxed">
 
@@ -30,6 +52,9 @@
 <% end %>
 
 </div>
+
+
+
 
 
 

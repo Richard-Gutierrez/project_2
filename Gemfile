@@ -5,6 +5,13 @@ ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 
+
+gem 'less-rails-bootstrap'
+
+gem 'therubyracer'
+
+gem 'twitter-bootstrap-rails'
+
 gem 'pg'
 
 # Use SCSS for stylesheets
@@ -46,6 +53,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
+
+gem 'active_attr'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views

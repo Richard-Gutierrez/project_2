@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Meddon' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+
+  <title>Project2</title>
+  <%= stylesheet_link_tag'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+  <%= yield %>
+
+</body>
+</html>
+
+<% title "Add Card"%>
+
+<%form_for @order do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :fist_name%><br />
+    <%= f.text_field : first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name%><br />
+    <%= f.text_field : last_name %>
+  </p>
+  <p>
+    <%= f.label :card_type%><br />
+    <%= f.select :card_type, ["Visa", "visa"], ["MasterCard", "master"], ["Discover", "discover"], ["American Express", "american_express"]] %>
+  </p>
+
+  <p>
+    <%= f.label :card_number %><br />
+    <%= f.text_field :card_number%>
+  </p>
+  <p>
+    <%= f.label :card_verification, "Card_Verification value (CW)" %><br />
+    <%= f.text_field :card_verification%>
+  </p>
+  <p>
+    <%= f.label :card_expires_on%><br />
+    <%= f. date_select :card_expires_on, :discard_day => true, :start_year => Date.today.year,
+    :end_year => (Date.today.year+10), :add_month_numbers => true %>
+  </p>
+  <p><%= f.submit "Submit"%></p>
+  <% end %>
+
+
+
+
+

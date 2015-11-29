@@ -1,13 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  first_name: MyString
+  last_name: MyString
+  card_type: MyString
   number: MyString
-  address: MyString
-  expiration: 2015-11-12
-  code: MyString
+  expires-on: 2015-11-24
+  user_id: 
 
 two:
+  first_name: MyString
+  last_name: MyString
+  card_type: MyString
   number: MyString
-  address: MyString
-  expiration: 2015-11-12
-  code: MyString
+  expires-on: 2015-11-24
+  user_id: 
