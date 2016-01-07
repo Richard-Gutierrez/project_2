@@ -10,69 +10,44 @@
 
   <h2><%= @user.name %></h2>
 
-  <h3>Cards</h3>
-  <% @user.cards.each do |card| %>
-    <div class="card">
+  <% if @user.card %>
+    <h3>Card</h3>
 
-      <h4><%= card.card_type %>: <%= card.number %></h4>
+    <div class="card">
+      <h4><%= @user.card.card_type %>: <%=@user.card.number %></h4>
+    </div>
+  <% else %>
+    <div>
+      <%= link_to 'Create a Card', new_card_path, class: 'btn btn-primary' %>
     </div>
   <% end %>
-
-
-
-
-<% form_for :order do |f| %>
-
-  <p>
-    <%= f.label :fist_name%><br />
-    <%= f.text_field :first_name %>
-  </p>
-  <p>
-    <%= f.label :last_name%><br />
-    <%= f.text_field :last_name %>
-  </p>
-  <p>
-    <%= f.label :card_type%><br />
-    <%= f.select :card_type, [["Visa", "visa"], ["MasterCard", "master"], ["Discover", "discover"], ["American Express", "american_express"]] %>
-  </p>
-
-  <p>
-    <%= f.label :card_number %><br />
-    <%= f.text_field :card_number%>
-  </p>
-  <p>
-    <%= f.label :card_verification, "Card Verification value (CVV)" %><br />
-    <%= f.text_field :card_verification%>
-  </p>
-  <p>
-    <%= f.label :card_expires_on%><br />
-    <%= f. date_select :card_expires_on, :discard_day => true, :start_year => Date.today.year,
-    :end_year => (Date.today.year+10), :add_month_numbers => true %>:
-  </p>
-  <p><%= f.submit "Submit" %></p>
-
-  <% end %>
-
-
 
 <%= link_to "Edit your Profile", edit_user_path(@user) %>
 
-<div id="boxed">
-    <div class="input-group">
-      <span class="input-group-addon" id="basic-addon1">Debit Card</span>
-      <input type="text" class="form-control" placeholder="Visa MasterCard" aria-describedby="basic-addon1">
-    </div>
+<%- model_class = Payment -%>
 
-    <div class="input-group">
-      <span class="input-group-addon" id="basic-addon1">Billing Address</span>
-      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-    </div>
-
-    <ul class="nav nav-pills">
-      <li role="presentation" class="active"><a href="#">Save</a></li>
-      <li role="presentation" class="active"><a href="#">Cancel</a></li>
-    </ul>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human %></h1>
 </div>
+
+<%= form_for @payment, :html => { :class => 'form-horizontal' } do |f| %>
+
+<div class="control-group">
+  <%= f.label :amount, 'Price', :class => 'control-label' %>
+  <div class="controls">
+    <%= f.text_field :amount, :class => 'text_field' %>
+  </div>
+</div>
+
+
+
+<div class="form-actions">
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+              payments_path, :class => 'btn' %>
+</div>
+<% end %>
+
 </div>
 
 </body>

@@ -24,6 +24,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @card = Card.new
+    @payment = Payment.new
   end
 
   def edit
