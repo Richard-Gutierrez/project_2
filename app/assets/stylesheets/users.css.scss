@@ -1,32 +1,46 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-  .show_background {
-    background-image: url('http://goo.gl/oT3jz6');
+.show_background {
+    background-image: url('http://www.jamesransom.com/gallery/large/dinner-overhead.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
-
-    height: 100vh;
-    width: 100vw;
   }
-/*
+
   html,
   body {
     height: 100%;
     width: 100%;
   }
-*/
-  h1 {
-    color: black;
-  }
 
+  h2 {
+  color: white;
+  font-family: 'Meddon', cursive;
+  font-size: 120px;
+
+  margin-left: 120px;
+
+
+  }
+/*
 main {
     background-color: rgba(255, 255, 255, 0.5);
     height: 80%;
     width: 80%;
     margin: 100px auto 0;
   }
+*/
+h3 {
+
+color: red;
+float: left;
+clear: left;
+margin-left: 600px;
+margin-top: 250px;
+
+}
+
 
 .form_words {
     color: white;
@@ -34,6 +48,13 @@ main {
 
 .secondpg {
   font-size: 20px;
+}
+
+#boxed {
+  width: 400px;
+  margin-top: 240px;
+  margin-left: 700px;
+
 }
 
 

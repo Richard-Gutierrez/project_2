@@ -1,25 +1,9 @@
 
-<style>
+<div class="show_background">
 
-h2 {
+<link href='https://fonts.googleapis.com/css?family=Meddon' rel='stylesheet' type='text/css'>
 
-color: red;
-float: left;
-clear: left;
-margin-left: 600px;
-margin-top: 250px;
-
-}
-ul {
-color: Dodger blue;
-
-}
-
-</style>
-
-
-
-<h1>Sign Up</h1>
+<h2>Sign Up</h2>
   <%= form_for @user do |f| %>
     <% if @user.errors.any? %>
       <div class="error_messages">
@@ -29,6 +13,7 @@ color: Dodger blue;
             <li><%= message %></li>
           <% end %>
         </ul>
+      </div>
       </div>
 
 <% end %>
