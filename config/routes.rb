@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   resources :cards
   resources :orders, :collection => {:confirm => :get}
   get 'welcome' => 'users#new'
+  get '/billings' => 'billings#index'
+  get '/billings/new' => 'billingss#new'
+  post 'billings' => 'billings#create'
+
 
 end
 
