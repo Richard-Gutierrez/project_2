@@ -1,7 +1,7 @@
 
 
 
-<div id="boxed">
+<div class="edit_box">
 
 <h1>Edit your page, <%= @user.name %>!</h1>
 
@@ -13,13 +13,18 @@
 <%= f.label :email %>
 <%= f.text_field :email, class: 'form-control' %>
 
+<br>
+
 <%= f.submit "Update Profile" %>
+
+<br><br>
 
 <%= link_to 'Delete', @user, method: :delete, data: { confirm: "Are you sure?"} %>
 
 <% end %>
 
 </div>
+
 
 
 <style>
@@ -31,13 +36,14 @@ background: url('http://tablet.todayonline.com/sites/default/files/styles/photo_
 h1 {
 color: white;
 font-family: 'UnifrakturMaguntia', cursive;
-
 }
 
-#boxed {
+.edit_box {
 
   margin-top: 360px;
   margin-left: 220px;
+  width: 400px;
+  margin: center;
 }
 
 </style>

@@ -4,6 +4,9 @@
 
 <link href='https://fonts.googleapis.com/css?family=Meddon' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
 
   <title>Project2</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -12,6 +15,26 @@
 </head>
 
 <body>
+
+
+<div class="top">
+
+<% if current_user %>
+   <% #Says welcome...user %>
+   <strong>Welcome, <%= current_user.name %></strong>
+
+   &nbsp;&nbsp;|&nbsp;&nbsp;
+   <%= link_to 'Your Page', user_path(current_user) %>
+   &nbsp;&nbsp;|&nbsp;&nbsp;
+   <%= link_to 'Logout', session_path('dontmatter'), method: :delete %>
+
+ <% else %>
+   <%= link_to 'Login', login_path %>
+   &nbsp;&nbsp;|&nbsp;&nbsp;
+   <%= link_to 'Sign Up', new_user_path %>
+ <% end %>
+
+</div>
 
 <%= yield %>
 

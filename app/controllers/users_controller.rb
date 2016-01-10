@@ -27,6 +27,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def pay
+
+  end
+
   def edit
     @user = User.find(params[:id])
   end
