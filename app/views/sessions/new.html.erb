@@ -1,0 +1,23 @@
+
+<div class ="login">
+
+<h1>Login</h1>
+<p id="alert"><%= alert %></p>
+
+<br>
+
+<%= form_tag sessions_path do %>
+ <div class="field form-group">
+   <%= label_tag :email %>:
+   <%= text_field_tag :email, params[:email] %>
+ </div>
+ <p>
+ <div class="field form-group">
+   <%= label_tag :password %>:
+   <%= password_field_tag :password %>
+ </div>
+ <p>
+ <div class="actions"><%= submit_tag "Log in" %></div>
+<% end %>
+
+</div>
