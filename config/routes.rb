@@ -1,21 +1,10 @@
 Rails.application.routes.draw do
-
-  resources :payments
   resources :users
-
-  resources :cards
-  resources :orders, :collection => {:confirm => :get}
-  get 'welcome' => 'users#new'
-  get '/billings' => 'billings#index'
-  get '/billings/new' => 'billingss#new'
-  post 'billings' => 'billings#create'
-
-
+  root 'users#new'
   root 'welcome#index'
 
   resources :sessions, only: [:new, :create, :destroy]
   get '/login', to: 'sessions#new'
-
 
 end
 
