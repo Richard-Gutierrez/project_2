@@ -1,0 +1,57 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.show_background {
+    background-image: url('http://www.jamesransom.com/gallery/large/dinner-overhead.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h2 {
+  color: white;
+  font-family: 'Meddon', cursive;
+  font-size: 120px;
+  margin-left: 120px;
+
+
+  }
+/*
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 80%;
+    width: 80%;
+    margin: 100px auto 0;
+  }
+
+h3 {
+
+color: white;
+float: left;
+clear: left;
+margin-left: 600px;
+margin-top: 250px;
+
+}
+*/
+
+.form_words {
+    color: white;
+}
+
+.secondpg {
+  font-size: 20px;
+}
+
+#boxed {
+  width: 400px;
+  margin-top: 240px;
+  margin-left: 700px;
+}
+
+
+
+
+
+
+
+
